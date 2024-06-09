@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px; /* Espacio entre el título y la barra de búsqueda */
+}
+
+.search-container {
+    margin-bottom: 20px; /* Espacio entre la barra de búsqueda y la galería */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+/* Mostrar solo el elemento con el ID coincidente */
+.gallery a {
+    display: block;
+}
+
+.gallery a:target {
+    display: block;
+}
